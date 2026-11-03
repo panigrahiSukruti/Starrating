@@ -4,14 +4,13 @@
   "description": "Full Stack Store Rating Web Application",
   "scripts": {
     "install:all": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "start": "node server/dist/server.js",
     "dev:server": "npm run dev --prefix server",
     "dev:client": "npm run dev --prefix client",
-    "seed": "npm run seed --prefix server",
-    "build:client": "npm run build --prefix client",
-    "build:server": "npm run build --prefix server"
+    "seed": "npm run seed --prefix server"
   },
   "devDependencies": {
     "concurrently": "^9.1.0"
   }
 }
-
